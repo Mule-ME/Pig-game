@@ -16,7 +16,7 @@ body {
   font-weight: 400;
   height: 100vh;
   color: #333;
-  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  background-image: linear-gradient(to top left, #3a6186 0%, #89253e 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,7 +59,7 @@ main {
 .score {
   font-size: 8rem;
   font-weight: 300;
-  color: #c7365f;
+  color: #89253e;
   margin-bottom: auto;
 }
 
@@ -78,7 +78,7 @@ main {
 }
 
 .current {
-  background-color: #c7365f;
+  background-color: #89253e;
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
@@ -158,14 +158,23 @@ main {
 }
 
 .player--winner {
-  background-color: #2f2f2f;
+  /* background-color: #2f2f2f; */
+  background: url('./assets/win.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.player--winner .name {
-  font-weight: 700;
-  color: #c7365f;
+.player--winner .name,
+.player--winner .score {
+  font-weight: bold;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#0b486b, #f56217);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
+.player--winner .current {
+  background-image: linear-gradient(to top left, #3a6186 0%, #89253e 100%);
+}
 .hidden {
   display: none;
 }
